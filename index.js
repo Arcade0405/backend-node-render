@@ -7,7 +7,7 @@ mongoose.connect(process.env.MONGO_URI)
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send({ message: "Backend CI/CD OK"});
+    res.json({ message: "Backend CI/CD OK"});
 });
 
 app.listen(3000);
